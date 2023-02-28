@@ -100,7 +100,7 @@ try:
         df_stock['Close'].plot(figsize=(15,6), color='green')
         df_stock['Predict'].plot(figsize=(15,6), color='orange')
 
-        df_stock3 = df_stock[['Close, 'Predict']]
+        df_stock3 = df_stock[['Close', 'Predict']]
         st.line_chart(df_stock3)
 
         if st.button('予測する'):
