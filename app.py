@@ -103,8 +103,8 @@ try:
         df_stock3 = df_stock[['Close', 'Predict']]
         st.line_chart(df_stock3)
 
-        if st.button('予測する'):
-            stock_predict()
+    if st.button('予測する'):
+        stock_predict()
 except:
     st.error(
         "エラーがおきているようです。"
